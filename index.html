@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+   <meta charset="UTF-8">
+    <title>index</title>
+  </head>
+<body>
+<h1>Форма</h1>
+<form action="index.php" method="POST" id="form">
+        <br>
+        <label>
+          ФИО:<br>
+          <input name="name" id = "name" placeholder="Введите ваше ФИО">
+        </label><br>
+  
+        <label>
+          Телефон:<br>
+          <input name="phone" id="phone" type="tel" value="+7">
+        </label><br>
+  
+        <label>
+          Email:<br>
+          <input name="email" id="email" type="email" placeholder="Введите вашу почту">
+        </label><br>
+  
+        <label>
+          Дата рождения:<br>
+          <input name="birthdate" id="birthdate" value="2024-01-01" type="date">
+        </label><br>
+  
+        <br>
+            <label class="form-check-label"><input type="radio" checked="checked" class="form-check-input" value="male" id="male" name="gender">
+              Мужской</label>
+            <label class="form-check-label"><input type="radio" class="form-check-input" value="female" id="female" name="gender">
+              Женский</label><br>
+  
+        <label>
+          Любимый язык программирования:
+          <br>
+          <select id="languages" name="languages[]" multiple="multiple">
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2" selected="selected">C</option>
+            <option value="Значение4" selected="selected">C++</option>
+            <option value="Значение5" selected="selected">JS</option>
+            <option value="Значение6" selected="selected">Java</option>
+            <option value="Значение7" selected="selected">Python</option>
+            <option value="Значение8" selected="selected">PHP</option>
+            <option value="Значение9" selected="selected">Scala</option>
+          </select>
+        </label><br>
+        <label>
+          Биография:<br>
+          <textarea id="bio" name="bio">Текст</textarea>
+        </label><br>
+        <br>
+        <label><input type="checkbox" checked="checked" name="contract_accepted" id="contract_accepted">
+          С контрактом ознакомлен(а)</label><br>
+  
+          <button type="submit" name="save" >Сохранить</button>
+      </form>
+</body>
+</html>
