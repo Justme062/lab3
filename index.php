@@ -1,9 +1,9 @@
 <?php
 // Устанавливаем соединение с базой данных
 $host = 'localhost';
-$dbname = 'u68668';
-$username = 'u68668';
-$password = '8037727';
+$dbname = 'u68685';
+$username = 'u68685';
+$password = '2197230';
 $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
 
 try {
